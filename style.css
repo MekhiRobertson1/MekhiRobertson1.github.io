@@ -1,27 +1,25 @@
 body {
-    background: rgb(76, 7, 7);
-    color: rgb(45, 45, 45);
-    padding: 50px;
+    background: rgb(182, 32, 32);
+    color: rgb(160, 0, 0);
+    padding: 10px;
     font-family: arial;
 }
 #all-contents {
-  max-width: 1200px;
-  max-height: 1200px;
+  max-width: 800px;
     margin: auto;
 }
 
 /* navigation menu */
 nav {
-    background: rgb(163, 14, 14);
+    background: rgb(239, 41, 41);
    margin: 0 auto;
-   margin-bottom: 20px;
     display: flex;
     padding: 10px;
 }
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(55, 0, 0);
     flex: 1;
     margin: 0;
 }
@@ -35,34 +33,6 @@ h1 {
 a {
     text-decoration: none;
     color: #fff;
-}
-
-/* main container area beneath menu */
-main {
-    background: rgb(245, 238, 219);
-    display: flex;
-}
-.sidebar {
-    margin-right: 50px;
-    padding: 10px;
-}
-.sidebar-img {
-    width: 250px;
-    height: 500px;
-}
-.content {
-    flex: 1;
-    padding: 15px;
-}
-
-/* portfolio styles */
-#interests {
-    border: 4px rgb(183, 127, 127) ridge;
-    border-radius: 30;
-    padding: 16px;
-}
-h2, h3 {
-    margin: 0px;
 }
 /* portfolio styles */
 .content h1 {
@@ -88,6 +58,52 @@ h2, h3 {
 #portfolio a {
     text-decoration: none;
     color: #454545;
+}{
+
 }
+
+/* main container area beneath menu */
+main {
+    background: rgb(245, 238, 219);
+    display: flex;
+}
+.sidebar {
+    margin-right: 25px;
+    padding: 10px;
+}
+.sidebar-img {
+    width: 200px;
+}
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+/* portfolio styles */
+.content h1 {
+    color: black;
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #eee;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #454545;
+}
+
 p { font-family: serif;}
 h1 { font-family: sans-serif;}
