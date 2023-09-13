@@ -52,6 +52,10 @@ $(function () {
     createPlatform(425, 150, 30, 50);
     createPlatform(425, 0, 30, 50);
     createPlatform(600, 150, 30, 50);
+    createPlatform(600, 0, 30, 50);
+    createPlatform(750, 150, 30, 50);
+    createPlatform(750, 0, 30, 50);
+    createPlatform(925, 150, 30, 50);
     // Obstacles on First Platform //
     // Obstacles on Second Platform //
     createPlatform(300, 350, 30, 50);
@@ -75,6 +79,8 @@ $(function () {
     createCannon("top", 400, 1000);
     createCannon("bottom", 480, 1500);
     createCannon("top", 750, 1000);
+    createCannon("bottom", 800, 1500);
+    createCannon("top", 1075, 1000);
     
 
 
