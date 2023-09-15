@@ -3,8 +3,8 @@ const walkAcceleration = 2.5; // how much is added to the speed each frame
 const gravity = 0.5; // how much is subtracted from speedY each frame
 const friction = 1.5; // how much the player is slowed each frame
 const maxSpeed = 8; // maximum horizontal speed, not vertical
-const playerJumpStrength = 12; // this is subtracted from the speedY each jump
-const projectileSpeed = 8; // the speed of projectiles
+const playerJumpStrength = 10; // this is subtracted from the speedY each jump
+const projectileSpeed = 5; // the speed of projectiles
 
 /////////////////////////////////////////////////
 //////////ONLY CHANGE ABOVE THIS POINT///////////
@@ -17,7 +17,7 @@ const playerScale = 0.8; //makes the player just a bit smaller. Doesn't affect t
 // Player variables
 const player = {
   x: 50,
-  y: 100,
+  y: 110,
   speedX: 0,
   speedY: 0,
   width: undefined,
@@ -30,7 +30,7 @@ const player = {
 let hitDx;
 let hitDy;
 let hitBoxWidth = 50 * playerScale;
-let hitBoxHeight = 105 * playerScale;
+let hitBoxHeight = 100 * playerScale;
 let firstTimeSetup = true;
 
 const keyPress = {
@@ -93,8 +93,9 @@ let animationDetails = {};
 var collectableList = {
   database: { image: "images/collectables/database.png" },
   diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
+  grace: { image: "images/meow.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  steve: { image: "images/pickaxe.png" },
 };
+
