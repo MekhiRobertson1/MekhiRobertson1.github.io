@@ -47,7 +47,7 @@ $(function () {
     createPlatform(0, 200, 1300, 20);
     createPlatform(1300, 400, 1300, 20);
     createPlatform(300, 400, 1300, 20);
-    createPlatform(0, 600, 200, 20)
+    createPlatform(0, 600, 1300, 20)
     // Actual Platforms //
     // Obstacles on First Platform //
     createPlatform(425, 150, 30, 50);
@@ -67,8 +67,7 @@ $(function () {
     createPlatform(1100, 310, 50, 90);
     // Obstacles on Second Platform //
     // Obstacles on Third Platform //
-    createPlatform(300, 560, 100,20)
-    createPlatform(500, 580, 100,20)
+    
     
     // TODO 2
     // Create collectables
@@ -94,8 +93,10 @@ $(function () {
     createCannon("left", 240, 5000);
     createCannon("left", 240, 5100);
     createCannon("left", 240, 5200);
+    createCannon("left", 685, 2000);
     // Last Platform Cannons //
-   
+   createCannon("right", 650, 2000)
+   createCannon("right", 550, 25000)
     
     
 
