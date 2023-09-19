@@ -95,7 +95,7 @@ var collectableList = {
   diamond: { image: "images/collectables/diamond-head.png" },
   grace: { image: "images/meow.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
+  max: { image: "images/zenith-removebg-preview.png" },
   steve: { image: "images/pickaxe.png" },
 };
 
