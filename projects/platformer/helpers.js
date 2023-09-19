@@ -360,22 +360,22 @@ function projectileCollision() {
 function deathOfPlayer() {
   ctx.fillStyle = "grey";
   ctx.fillRect(
-    canvas.width / 4,
-    canvas.height / 6,
-    canvas.width / 2,
-    canvas.height / 2
+    canvas.width / 0,
+    canvas.height / 0,
+    canvas.width / 0,
+    canvas.height / 0,
   );
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "red";
   ctx.font = "800% serif";
   ctx.fillText(
-    "You are dead",
+    "You were slain...",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
   ctx.font = "500% serif";
   ctx.fillText(
-    "Hit any key to restart",
+    "Press any Key to Respawn",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14
@@ -417,6 +417,7 @@ function drawPlatforms() {
       platforms[i].y,
       platforms[i].width,
       platforms[i].height
+    
     );
   }
 }
