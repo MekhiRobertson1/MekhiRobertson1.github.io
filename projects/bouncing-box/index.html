@@ -74,23 +74,15 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				
-				positionX = 0 + speed;
-				moveBoxTo(positionX);
+				positionX = positionX + 10;
+                moveBoxTo(positionX);
 
-				positionX = 10 + speed;
-				moveBoxTo(positionX);
-
-				positionX = 20 + speed;
-				moveBoxTo(positionX);
-
-				positionX = 0;
-
-
-				positionX = 30 + speed;
-				moveBoxTo(positionX);
-
-
+				if (positionX >= boardWidth){
+					speed = -speed;
+				}
+				if (positionX <= 0){
+					speed = speed;
+				}
 
 			};
 
@@ -102,7 +94,7 @@
 			function handleBoxClick() {
 				positionX = 0;
 				positionX = positionX + 10;
-				
+				speed = speed += 3;
 				
 				changeBoxText(points);
 
