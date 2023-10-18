@@ -16,6 +16,7 @@
 			position: absolute;
 			top: 100px;
 			left: 400px;  /* <--- Change me! */
+			background-image: ;
 		}
 		.board{
 			height: 100vh;
@@ -42,7 +43,7 @@
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
-			setInterval(update, 50);
+			var interval = setInterval(update, 50);
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
@@ -65,8 +66,16 @@
 			    var positionX = 0;
 				var points = 0;
 				var speed = 10;
-
-			
+				var positionY = 0;
+				var speedY;
+				var boardHeight = jQuery(window).height(); 
+				var randNum = Math.random() * 100;
+				var colorStr = "rgb(50, 25, 250)";
+				box.css('background-color', colorStr);
+				function getRandomColor(){
+					var randomNumberBetween0and10 = Math.random() * 10;
+					return randomNumberBetween0and10;
+				}
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -74,18 +83,28 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				positionX = positionX + 10;
-                moveBoxTo(positionX);
+				positionX = positionX + speed;
+				positionY = positionY + speed
+                moveBoxTo(positionX, positionY);
 
 				if (positionX >= boardWidth){
 					speed = -speed;
 				}
 				if (positionX <= 0){
-					speed = speed;
+					speed = -speed;
 				}
-
+				if (positionY >= boardHeight){
+					speed = -speed;
+				}
+				if (positionY <= 0){
+					speed = -speed
+				}
+				
+				function moveBoxTo(newPositionX, newPositionY) {
+      				box.css('left', newPositionX);
+      				box.css('top', newPositionY);
 			};
-
+		}
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
@@ -95,7 +114,13 @@
 				positionX = 0;
 				positionX = positionX + 10;
 				speed = speed += 3;
-				
+				if (speed +speed){
+					speed += 3
+				}
+				else if (speed -speed){
+					speed -= 3
+				}
+				points = points + 1;
 				changeBoxText(points);
 
 
