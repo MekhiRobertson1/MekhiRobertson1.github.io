@@ -32,7 +32,7 @@ circles.push(circle);
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle(5)
+        drawCircle()
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
